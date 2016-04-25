@@ -935,7 +935,7 @@ func TestFindImportVendor(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	want := "github.com/Go-zh/net/http2/hpack"
+	want := "golang.org/x/net/http2/hpack"
 	// Pre-1.7, we temporarily had this package under "internal" - adjust want accordingly.
 	_, err = os.Stat(filepath.Join(runtime.GOROOT(), "src/vendor", want))
 	if err != nil {
@@ -974,7 +974,7 @@ func TestProcessVendor(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	want := "github.com/Go-zh/net/http2/hpack"
+	want := "golang.org/x/net/http2/hpack"
 	if !bytes.Contains(out, []byte(want)) {
 		t.Fatalf("Process(%q) did not add expected hpack import:\n%s", target, out)
 	}

@@ -60,7 +60,7 @@
 //
 // Bundle golang.org/x/net/http2 for inclusion in net/http,
 // prefixing all identifiers by "http2" instead of "http2_",
-// and rewriting the import "github.com/Go-zh/net/http2/hpack"
+// and rewriting the import "golang.org/x/net/http2/hpack"
 // to "internal/golang.org/x/net/http2/hpack":
 //
 //	cd $GOROOT/src/net/http

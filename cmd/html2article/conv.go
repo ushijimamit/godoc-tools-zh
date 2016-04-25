@@ -19,8 +19,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Go-zh/net/html"
-	"github.com/Go-zh/net/html/atom"
+	"golang.org/x/net/html"
+	"golang.org/x/net/html/atom"
 )
 
 func main() {
